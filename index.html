@@ -389,11 +389,17 @@
             </div>
             <div class="form-field">
               <label for="name" class="form-label">Телефон</label>
-              <input type="text" class="form-input" name="phone" id="name" />
+              <input
+                type="tel"
+                class="form-input"
+                name="tel"
+                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                id="name"
+              />
             </div>
             <div class="form-field">
               <label for="name" class="form-label">Почта</label>
-              <input type="text" class="form-input" name="email" id="name" />
+              <input type="email" class="form-input" name="email" id="name" />
             </div>
             <div class="form-field">
               <label for="name" class="form-label">Коментар</label>
