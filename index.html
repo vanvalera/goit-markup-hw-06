@@ -386,6 +386,9 @@
             <div class="form-field">
               <label for="name" class="form-label">Ім'я </label>
               <input type="text" class="form-input" name="name" id="name" required />
+              <svg class="checkbox-phone">
+                <use href="./images/icon-close.svg#icon-person-black"></use>
+              </svg>
             </div>
             <div class="form-field">
               <label for="tel" class="form-label">Телефон</label>
@@ -395,12 +398,17 @@
                 name="tel"
                 pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                 id="name"
-                value="+380"
               />
+              <svg class="checkbox-phone">
+                <use href="./images/icon-close.svg#icon-phone-black"></use>
+              </svg>
             </div>
             <div class="form-field">
               <label for="email" class="form-label">Почта</label>
               <input type="email" class="form-input" name="email" id="name" />
+              <svg class="checkbox-phone">
+                <use href="./images/icon-close.svg#icon-email-black"></use>
+              </svg>
             </div>
             <div class="form-field">
               <label for="comment" class="form-label">Коментар</label>
@@ -412,7 +420,14 @@
                 placeholder="Введіть текст"
               />
             </div>
-            <button type="submit">Відправити</button>
+            <div>
+              <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" />
+              <label for="checkbox" class="check-label"
+                >Погоджуюся з розсилкою та приймаю
+                <span class="checkbox-link"><a href="">Умови договору</a></span></label
+              >
+            </div>
+            <button type="submit" class="button-submit">Відправити</button>
           </form>
         </div>
       </div>
