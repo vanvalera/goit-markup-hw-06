@@ -418,16 +418,15 @@
             </div>
             <div class="form-field">
               <label for="comment" class="form-label">Коментар</label>
-              <input
-                type="text"
+              <textarea
                 class="form-area"
                 name="comment"
                 id="name"
                 placeholder="Введіть текст"
-              />
+              ></textarea>
             </div>
-            <div>
-              <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" />
+            <div class="agreament">
+              <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" hidden />
               <label for="checkbox" class="check-label"
                 >Погоджуюся з розсилкою та приймаю
                 <span class="checkbox-link"><a href="">Умови договору</a></span></label
@@ -490,6 +489,17 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <label for="join" class="form-label-foot">Підпишіться на розсилку</label>
+          <input type="email" class="form-input-foot" name="join" id="join" placeholder="E-mail" />
+          <button type="submit" class="button-foot">
+            Підписатися
+            <span
+              ><svg class="join-foot-icon">
+                <use href="./images/icon-close.svg#icon-icon-send"></use></svg
+            ></span>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./modal.js"></script>
