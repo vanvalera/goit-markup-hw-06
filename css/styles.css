@@ -595,6 +595,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #ffffff;
+  transition: var(--main-transition);
 }
 .modal-tittle {
   margin-bottom: 12px;
@@ -615,6 +616,8 @@ img {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 42px;
+  transition: var(--main-transition);
 }
 .form-area {
   margin-bottom: 20px;
@@ -623,6 +626,7 @@ img {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: var(--main-transition);
 }
 .form-label {
   font-size: 12px;
@@ -646,12 +650,15 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  display: flex;
+  align-items: center;
 }
 .button-submit {
   display: block;
   width: 200px;
   height: 50px;
   margin: auto;
+  cursor: pointer;
 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -680,9 +687,35 @@ img {
 .icon-phone {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 12px;
   transform: translateY(-50%);
 }
 .input-icon {
   position: relative;
+}
+.form-input:hover,
+.form-input:focus {
+  border-color: #2196f3;
+  outline: transparent;
+}
+.form-input:focus + svg,
+.form-input:hover + svg {
+  fill: #2196f3;
+}
+.form-area:hover,
+.form-area:focus {
+  border-color: #2196f3;
+  outline: transparent;
+}
+.modal-button-close:hover > svg,
+.modal-button-close:focus > svg {
+  fill: #2196f3;
+}
+.check-label::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 2px;
+  margin-right: 7px;
 }
